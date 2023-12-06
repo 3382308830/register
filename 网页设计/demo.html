@@ -1,0 +1,64 @@
+<!DOCTYPE html>  
+<html lang="en">  
+    <head>
+        <meta charset="UTF-8">
+        <!--视口刚好-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>网页登录</title>
+
+        <!--css样式    内联   外引-->
+        <!--外引CSS文件属性  自闭和标签-->
+        <link rel="stylesheet" href="demo.css">  
+    </head>  
+    <body>
+        <!--视频动画标签  自动播放  重播  静音 css类名--> 
+        <video autoplay loop muted class="bg-video"> 
+            <!--指定媒体资源标签    路径      MIME类型--> 
+            <source src="背景.mp4" type="video/mp4">  
+        </video>
+        
+        <div class="title">
+            <h1>“计网杯”网页设计大赛</h1>
+            <div class="title1">
+                <h6>竞赛简介：</h6>
+            </div>
+            <div class="introduction">
+                <!--内联段落样式  首行缩进两个单位-->
+                <p style="text-indent: 2em;"> 网页设计大赛是一个旨在展示和提升参
+                    与者网页设计能力的竞赛活动。这样的比赛
+                    通常面向广大学生、设计师或开发人员，激
+                    发他们在网页设计领域的创新和创造力。大
+                    赛提供一个平台，让参赛者可以展示他们的
+                    技术技能、设计才华和创新思维。
+                </p>
+            </div>
+        </div>
+        <!--登录模块定义-->
+        <div class="login-container">  
+            <h1>Welcome</h1>
+
+            <!-- 这里添加你的登录表单-->                  <!--无输入字段无法生效--> 
+            <form>  
+                <input type="text" placeholder="请输入用户名"  required>  
+                <input type="password" placeholder="请输入密码"  required>  
+            </form>
+
+            <div class="fn">
+                <!--创建javascript链接 用于后端注册验证-->
+                <a href="javascript:">注册账号</a>
+                <a href="javascript:">忘记密码?</a>
+            </div>
+
+            <a href="./work.html">
+                <input type="submit" class="btn" value="登  录">
+            </a>  
+        </div>  
+    </body>  
+</html>
+
+
+
+
+
+
+

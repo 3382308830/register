@@ -1,0 +1,111 @@
+*{
+    /* 禁止用户选择页面文本 */
+    user-select: none;
+}
+
+/*背景动画设置*/
+.bg-video {  
+    position: fixed;  /*固定样式*/
+    /* 将元素的右边缘和底边缘分别固定在窗口的右下角，使其充满整个屏幕。 */
+    right: 0;  
+    bottom: 0;  
+    min-width: 100%;   
+    min-height: 100%;  
+}
+
+
+.title{  
+    /* absolute相对于其最近的已定位的父元素 */
+    position: absolute;  
+    /* 相对于父元素顶部的偏移量 */
+    top: 1%;  
+    left: 1px; 
+    /* 平移变换，向左，向上 */
+    transform: translate(-0.5%, -10%);  
+    color: white;  
+    font-size: 40px; 
+    /*文本周围添加阴影效果*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+}
+.title1{
+    position: absolute;
+    top: 40%;  
+    left: 1px;  
+    transform: translate(50%, 50%);
+    color: white;
+    font-size: 45px;
+
+}
+.introduction{
+    position: absolute;  
+    top: 110%;  
+    left: 30px;  
+    transform: translate(5%, 30%);  
+    color: white;  
+    font-size: 30px;  
+   
+}
+
+/*登录框属性设置*/
+.login-container {  
+    position: absolute;  
+    top: 50%;  
+    margin-top: -200px; 
+    left: 50%;  
+    margin-left: 200px; 
+      
+    background-color: rgba(255, 255, 255, 0.7);  
+    width: 400px;
+    height: 400px;  
+    border-radius: 25px; 
+    /* 文本对齐 */
+    text-align: center; 
+    /* 内边距，元素内容和边框之间，上下，左右 */
+    padding: 5px 40px;
+    /* 元素的总宽度和高度等于设置的宽度和高度加上内边距和边框的宽度。 */
+    box-sizing: border-box;
+}
+/* 介绍文本的尺寸和粗细 */
+p{
+    font-size: px;
+    font-weight: 500;
+}
+/*输入框属性设置*/
+input{
+    background-color:  rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 48px;
+    margin-top: 10px; /* 外边距-上 */
+    border: none;  
+    /* 宽度2  实线 */
+    border-bottom: 2px solid silver;
+    /*下面的会覆盖上面的步伐*/
+    outline: none;
+    font-size: 22px;
+    border-radius: 20px;
+}
+/*登录按键属性设置*/
+.btn{
+    background-color: #59c2c5;
+    width: 38%;
+    height: 48px;
+    /*边框圆角*/
+    border-radius: 8px;
+    margin-top: 50px;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+
+}
+.btn:hover{
+    background-color: #59c2a0;
+}
+
+.fn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+
